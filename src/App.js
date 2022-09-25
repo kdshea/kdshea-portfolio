@@ -1,16 +1,20 @@
-import { useEffect } from 'react'
-import axios from 'axios'
 
-const App = () => {
-  useEffect(() => {
-    const getData = async () => {
-      const { data } = await axios.get('/api/products/') // * <-- replace with your endpoint
-      console.log(data)
-    }
-    getData()
-  })
+import './styles/main.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ComingSoon from './components/ComingSoon'
 
-  return <h1>Hello World</h1>
+
+
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<ComingSoon />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  )
 }
 
 export default App
