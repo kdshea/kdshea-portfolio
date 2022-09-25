@@ -1,2 +1,2 @@
 # kdshea-portfolio
-Personal portfolio set using React
+Personal portfolio site using React
