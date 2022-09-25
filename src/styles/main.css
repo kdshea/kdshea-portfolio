@@ -1,3 +1,85 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.coming-soon {
+  color: #FCF9F4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.15);
+}
+.coming-soon h1 {
+  font-family: "Yellowtail", cursive;
+  font-weight: normal;
+  font-size: 5rem;
+  margin: 2rem auto;
+}
+.coming-soon h4 {
+  font-weight: normal;
+}
+.coming-soon .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin: 2rem auto;
+}
+.coming-soon p {
+  font-size: 1.5rem;
+}
+.coming-soon .connect {
+  margin-top: 1.5rem;
+}
+.coming-soon a {
+  text-decoration: none;
+  color: #FCF9F4;
+  transition: color 0.5s, font-size 0.5s;
+  font-size: 1.5rem;
+}
+.coming-soon a:hover {
+  font-size: 1.75rem;
+  color: #CCD6A5;
+  font-weight: normal;
+}
+.coming-soon .links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.coming-soon .links a {
+  transition: color 0.5s, font-size 0.5s;
+  font-size: 3rem;
+}
+.coming-soon .links a:hover {
+  font-size: 3.5rem;
+  color: #CCD6A5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=main.css.map */
