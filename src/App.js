@@ -8,7 +8,6 @@ import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import About from './components/About'
-import Interests from './components/Interests'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -27,7 +26,6 @@ function App() {
         <section className="experience-wrapper"><Experience /></section>
         <section className="projects-wrapper"><Projects /></section>
         <section className="about-wrapper"><About /></section>
-        <section className="interests-wrapper"><Interests /></section>
         <section className="contact-wrapper"><Contact /></section>
         <footer><Footer /></footer>
       </div>

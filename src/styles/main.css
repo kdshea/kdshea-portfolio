@@ -11,6 +11,79 @@ video {
      object-fit: cover;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.image-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 175px;
+}
+
+.palm-1 {
+  background-image: url(../assets/palm-1.jpg);
+}
+
+.palm-2 {
+  background-image: url(../assets/palm-2.jpg);
+}
+
+.palm-3 {
+  background-image: url(../assets/palm-3.jpg);
+}
+
+.palm-4 {
+  background-image: url(../assets/palm-4.jpg);
+}
+
+.palm-5 {
+  background-image: url(../assets/palm-5.jpg);
+}
+
+.palm-6 {
+  background-image: url(../assets/palm-6.jpg);
+}
+
+.palm-7 {
+  background-image: url(../assets/palm-7.jpg);
+}
+
+.palm-8 {
+  background-image: url(../assets/palm-8.jpg);
+}
+
+.contact-wrapper a {
+  text-decoration: none;
+  color: #FCF9F4;
+  transition: color 0.5s, font-size 0.5s;
+  font-size: 1.5rem;
+}
+.contact-wrapper a:hover {
+  font-size: 1.75rem;
+  color: #CCD6A5;
+  font-weight: normal;
+}
+.contact-wrapper .links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact-wrapper .links a {
+  transition: color 0.5s, font-size 0.5s;
+  font-size: 3rem;
+}
+.contact-wrapper .links a:hover {
+  font-size: 3.5rem;
+  color: #CCD6A5;
+}
+
 .coming-soon {
   color: #FCF9F4;
   position: absolute;
@@ -68,13 +141,4 @@ video {
 .coming-soon .links a:hover {
   font-size: 3.5rem;
   color: #CCD6A5;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=main.css.map */
