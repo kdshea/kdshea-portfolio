@@ -3,9 +3,11 @@ const NavBar = () => {
     <div className="container">
       <button>Button</button>
       <div>
-        <a>Nav Link</a>
-        <a>Nav Link</a>
-        <a>Nav Link</a>
+        <a>Skills</a>
+        <a>Experience</a>
+        <a>Projects</a>
+        <a>About</a>
+        <a>Contact</a>
       </div>
     </div>
   )
