@@ -3,7 +3,7 @@ import videoBg from '../assets/videoBg.mp4'
 const Hero = () => {
   return (
     <div className="container">
-      <div className="overlay"></div>
+      {/* <div className="overlay"></div> */}
       <video src={videoBg} autoPlay muted />
       <div className="hero">
         <h1>Hero Section</h1>

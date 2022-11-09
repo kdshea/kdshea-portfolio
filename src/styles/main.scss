@@ -75,6 +75,13 @@ video {
   background-image: url(../assets/palm-8.jpg);
 }
 
+
+// HERO SECTION STYlES
+
+.hero-arrow {
+  animation: bounce 1.5s linear infinite;
+}
+
 // SKILLS SECTION STYLES
 .skill-icons {
   display: flex;
