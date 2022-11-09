@@ -6,13 +6,11 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 
 const NavBar = () => {
   return (
-  // <div className="container">
-
-    <Navbar collapseOnSelect expand="lg" sticky="top">
+    // <div className="nav-wrapper">
+    <Navbar collapseOnSelect expand="md">
       <Container>
         <Navbar.Brand href="#">
-          {/* <img alt="K" src={Logo} width="30" height="30"className="d-inline-block align-top"/>{' '} */}
-            Kate Shea
+          <img alt="K" src={Logo} width="30" height="30"className="d-inline-block align-top"/>{' '}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -31,11 +29,13 @@ const NavBar = () => {
               <NavDropdown.Item href="#action/3.1">LinkedIn</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Email</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">GitHub</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Twitter</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    // </div>
   )
 }
 
