@@ -1,7 +1,10 @@
+import Kate from '../assets/kate.jpg'
+
 const Contact = () => {
   return (    <>
     <div className="container">
       <h2>Contact Section</h2>
+      <img src={Kate} alt="Kate Shea" />
       <div className="links">
         <div> 
           <a href="https://www.linkedin.com/in/katedshea/" target="_blank" rel="noopener noreferrer">

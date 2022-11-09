@@ -7,18 +7,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 const NavBar = () => {
   return (
   // <div className="container">
-  //   <button>Button</button>
-  //   <div>
-  //     <a>Skills</a>
-  //     <a>Experience</a>
-  //     <a>Projects</a>
-  //     <a>About</a>
-  //     <a>Contact</a>
-  //   </div>
-  // </div>
 
-
-    <Navbar collapseOnSelect expand="lg">
+    <Navbar collapseOnSelect expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="#">
           {/* <img alt="K" src={Logo} width="30" height="30"className="d-inline-block align-top"/>{' '} */}

@@ -19,12 +19,14 @@ $cursive: 'Yellowtail', cursive;
 $light: 300;
 $extra-bold: 800;
 
-// .container {
-//   width: 100%;
-//   height: 100vh;
-// }
+
 
 // BACKGROUND IMAGES AND VIDEO
+
+.video-container {
+  width: 100%;
+  height: 100vh;
+}
 
 video {
   width: 100%;
@@ -116,7 +118,7 @@ video {
 .contact-wrapper{
   a {
     text-decoration: none;
-    color: $baby-powder;
+    color: $dark-blue;
     -webkit-transition: color 0.5s, font-size 0.5s;
     transition: color 0.5s, font-size 0.5s;
     font-size: 1.5rem;
