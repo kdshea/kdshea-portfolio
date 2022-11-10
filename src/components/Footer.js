@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="container">
+    <div>
       <p>Copyright © 2022 kdshea.com</p>
     </div>
   )

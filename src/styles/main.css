@@ -15,6 +15,11 @@ html {
   text-align: center;
 }
 
+.container {
+  padding-top: 20vh;
+  margin-top: -20vh;
+}
+
 .image-section {
   background-attachment: fixed;
   background-position: center;
@@ -226,24 +231,12 @@ video {
   text-decoration: none;
   color: #172C3C;
   transition: color 0.5s, font-size 0.5s;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 .contact-wrapper a:hover {
-  font-size: 1.75rem;
-  color: #CCD6A5;
+  font-size: 2rem;
+  color: #5B6C52;
   font-weight: normal;
-}
-.contact-wrapper .links {
-  display: flex;
-  justify-content: space-evenly;
-}
-.contact-wrapper .links a {
-  transition: color 0.5s, font-size 0.5s;
-  font-size: 3rem;
-}
-.contact-wrapper .links a:hover {
-  font-size: 3.5rem;
-  color: #CCD6A5;
 }
 
 footer {

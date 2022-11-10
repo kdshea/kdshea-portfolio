@@ -7,7 +7,7 @@ import images from '../Images'
 const About = () => {
   return (
     <>
-      <div className="container">
+      <div id="about" className="container">
         <div className="about-text">
           <h2>About Me</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>

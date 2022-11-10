@@ -21,7 +21,7 @@ function Carousel() {
 const Projects = () => {
   return (
     <>
-      <div className="container">
+      <div id="projects" className="container">
         <h2>Projects</h2>
         <div className="project">
           <div className="project-image">

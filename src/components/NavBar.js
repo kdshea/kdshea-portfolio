@@ -17,19 +17,19 @@ const NavBar = () => {
           <Nav className="me-auto">
           </Nav>
           <Nav>
-            <Nav.Link href="#">Skills</Nav.Link>
-            <Nav.Link eventKey={2} href="#">Experience</Nav.Link>
-            <Nav.Link eventKey={2} href="#">Projects</Nav.Link>
-            <Nav.Link eventKey={2} href="#">About</Nav.Link>
+            <Nav.Link href="#skills">Skills</Nav.Link>
+            <Nav.Link href="#experience">Experience</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
             <NavDropdown title="Contact" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#">
+              <NavDropdown.Item href="#contact">
                 Get In Touch
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.1">LinkedIn</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Email</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">GitHub</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Twitter</NavDropdown.Item>
+              <NavDropdown.Item href="mailto: daishea@gmail.com?subject=Hello" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-square-envelope"></i> Email</NavDropdown.Item>
+              <NavDropdown.Item href="https://www.linkedin.com/in/katedshea/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i>  LinkedIn</NavDropdown.Item>
+              <NavDropdown.Item href="https://github.com/kdshea" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-square-github"></i> GitHub</NavDropdown.Item>
+              <NavDropdown.Item href="https://twitter.com/Kate_Shea_" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-square-twitter"></i> Twitter</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

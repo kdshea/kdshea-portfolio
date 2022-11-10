@@ -2,33 +2,33 @@ import Kate from '../assets/kate.jpg'
 
 const Contact = () => {
   return (    <>
-    <div className="container">
+    <div id="contact" className="container">
       <h2>Contact</h2>
       <img src={Kate} alt="Kate Shea" />
       <div className="links">
+        <div>
+          <a href="mailto: daishea@gmail.com?subject=Hello" target="_blank" rel="noopener noreferrer">
+            <i className="fa-solid fa-square-envelope"></i> daishea@gmail.com
+          </a>
+        </div>
         <div> 
           <a href="https://www.linkedin.com/in/katedshea/" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-linkedin"></i> 
+            <i className="fa-brands fa-linkedin"></i> LinkedIn/katedshea
           </a>
         </div>
         <div>
           <a href="https://github.com/kdshea" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-square-github"></i> 
-          </a>
-        </div>
-        <div>
-          <a href="mailto: daishea@gmail.com?subject=Hello" target="_blank" rel="noopener noreferrer">
-            <i className="fa-solid fa-square-envelope"></i> 
+            <i className="fa-brands fa-square-github"></i> GitHub/kdshea
           </a>
         </div>
         <div>
           <a href="https://twitter.com/Kate_Shea_" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-square-twitter"></i> 
+            <i className="fa-brands fa-square-twitter"></i> Twitter/Kate_Shea_
           </a>
         </div>
         <div>
           <a href="https://flickr.com/photos/kdshea35/" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-flickr"></i>
+            <i className="fa-brands fa-flickr"></i> Flickr/kdshea35
           </a>
         </div>
       </div>

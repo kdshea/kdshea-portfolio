@@ -1,7 +1,8 @@
 const Skills = () => {
   return (
     <>
-      <div className="container">
+      <div></div>
+      <div id="skills" className="container">
         <h2>Skills</h2>
         <ul className="skill-icons">
           <li className="cell">

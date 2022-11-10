@@ -6,7 +6,7 @@ import StarIcon from '@material-ui/icons/Star'
 const Experience = () => {
   return (
     <>
-      <div className="container">
+      <div id="experience" className="container">
         <h2>Experience Section</h2>
         
         <VerticalTimeline>
