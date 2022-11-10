@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="container">
-      <h4>© kdshea.com 2022</h4>
+      <p>Copyright © 2022 kdshea.com</p>
     </div>
   )
 }

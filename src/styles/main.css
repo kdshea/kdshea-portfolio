@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: #172C3C;
+}
+
+.site-wrapper {
+  background-color: #FCF9F4;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
 .image-section {
   background-attachment: fixed;
   background-position: center;
@@ -13,35 +23,43 @@
 }
 
 .palm-1 {
-  background-image: url(../assets/palm-1.jpg);
+  background-image: url(../assets/palm-1.jpg), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
 }
 
 .palm-2 {
-  background-image: url(../assets/palm-2.jpg);
+  background-image: url(../assets/palm-2.jpg), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
 }
 
 .palm-3 {
-  background-image: url(../assets/palm-3.jpg);
+  background-image: url(../assets/palm-3.jpg), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
 }
 
 .palm-4 {
-  background-image: url(../assets/palm-4.jpg);
+  background-image: url(../assets/palm-4.jpg), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
 }
 
 .palm-5 {
-  background-image: url(../assets/palm-5.jpg);
+  background-image: url(../assets/palm-5.jpg), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
 }
 
 .palm-6 {
-  background-image: url(../assets/palm-6.jpg);
+  background-image: url(../assets/palm-6.jpg), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
 }
 
 .palm-7 {
-  background-image: url(../assets/palm-7.jpg);
+  background-image: url(../assets/palm-7.jpg), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
 }
 
 .palm-8 {
-  background-image: url(../assets/palm-8.jpg);
+  background-image: url(../assets/palm-8.jpg), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
 }
 
 nav {
@@ -96,9 +114,6 @@ video {
   margin: 0;
   transform: translateY(-50%);
   color: #FCF9F4;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.15);
 }
 .hero h1 {
   font-family: "Montserrat", sans-serif;
@@ -106,21 +121,30 @@ video {
   font-size: 5rem;
   margin: 2rem auto;
 }
-.hero h2 {
-  font-weight: normal;
-}
-.hero .title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  margin: 2rem auto;
-}
-.hero p {
-  font-size: 1.5rem;
+.hero i {
+  padding-top: 20vh;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
 .hero-arrow {
-  -webkit-animation: bounce 3s linear infinite;
-          animation: bounce 3s linear infinite;
+  -webkit-animation: bounce 0.75s ease infinite alternate;
+          animation: bounce 0.75s ease infinite alternate;
 }
 
 .skill-icons {
@@ -214,4 +238,9 @@ video {
 .contact-wrapper .links a:hover {
   font-size: 3.5rem;
   color: #CCD6A5;
+}
+
+footer {
+  background-color: #172C3C;
+  color: #FCF9F4;
 }/*# sourceMappingURL=main.css.map */
