@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <>
       <div className="container">
-        <h2>Projects Section</h2>
+        <h2>Projects</h2>
         <div className="project">
           <div className="row">
             <div className="col project-image">

@@ -7,7 +7,10 @@ const Hero = () => {
         <video src={videoBg} autoPlay muted />
       </div>
       <div className="hero">
-        <h1>Hero Section</h1>
+        <h3>Hi, I&#39;m</h3>
+        <h1>Kate Shea</h1>
+        <h2>Web Developer</h2>
+        <i className="fa-solid fa-chevron-down hero-arrow"></i>
       </div>
     </div>
   )

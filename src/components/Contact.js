@@ -3,7 +3,7 @@ import Kate from '../assets/kate.jpg'
 const Contact = () => {
   return (    <>
     <div className="container">
-      <h2>Contact Section</h2>
+      <h2>Contact</h2>
       <img src={Kate} alt="Kate Shea" />
       <div className="links">
         <div> 

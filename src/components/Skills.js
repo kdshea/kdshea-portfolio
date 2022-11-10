@@ -2,7 +2,7 @@ const Skills = () => {
   return (
     <>
       <div className="container">
-        <h2>Skills Section</h2>
+        <h2>Skills</h2>
         <ul className="skill-icons">
           <li className="cell">
             {/* Skill icon i tag here */}
