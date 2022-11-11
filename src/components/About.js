@@ -23,6 +23,12 @@ const About = () => {
         </div>
         <div className="about-photography">
           <h3>Photography</h3>
+          <div>
+            <a href="https://flickr.com/photos/kdshea35/" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-flickr"></i>
+              <span className="link-label"> Flickr/kdshea35</span>
+            </a>
+          </div>
           <div className="photo-wrapper">
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
