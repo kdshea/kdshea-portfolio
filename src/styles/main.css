@@ -163,6 +163,8 @@ video {
   flex-direction: row;
   justify-content: center;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .skill-icons li {
@@ -181,21 +183,39 @@ video {
 .cell {
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
+@media only screen and (min-width: 992px) {
+  .skill-icons li {
+    margin: 20px 10px 10px 10px;
+    width: 125px;
+    height: 125px;
+    align-items: center;
+  }
+  .skill-icons li i {
+    font-size: 2.5rem;
+  }
+}
 .mac-svg {
-  background-image: url(../assets/mac-screen.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 500px;
-  min-width: 300px;
-  min-height: 530px;
+  background-image: none;
   margin: 0 auto;
   position: relative;
+  width: 100%;
+  min-width: 300px;
+  min-height: 375px;
 }
 
+@media only screen and (min-width: 768px) {
+  .mac-svg {
+    background-image: url(../assets/mac-screen.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 530px;
+  }
+}
 .carousel-container {
   width: 100%;
   max-width: 616px;
@@ -240,20 +260,17 @@ video {
   max-width: 100%;
 }
 
-#contact {
-  display: flex;
-  flex-direction: column;
-}
-#contact .links {
-  text-align: left;
+.contact-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  text-align: left;
 }
 
 .kate-pic img {
   border-radius: 50%;
-  border: solid 1px #B97853;
+  border: solid 1px #E2CDB5;
   max-width: 200px;
 }
 
@@ -269,6 +286,20 @@ video {
   font-weight: normal;
 }
 @media only screen and (max-width: 576px) {
+  .contact-wrapper .contact-flex, .about-photography .contact-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .contact-wrapper .contact-flex .links, .about-photography .contact-flex .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .contact-wrapper .contact-flex .links div, .about-photography .contact-flex .links div {
+    padding: 0 15px;
+  }
   .contact-wrapper a, .about-photography a {
     font-size: 3rem;
   }

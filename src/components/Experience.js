@@ -1,103 +1,112 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
 import WorkIcon from '@material-ui/icons/Work'
 import SchoolIcon from '@material-ui/icons/School'
+import ComputerIcon from '@material-ui/icons/Computer'
+import LocalHospitalIcon from '@material-ui/icons/LocalHospital'
 import StarIcon from '@material-ui/icons/Star'
 
 const Experience = () => {
   return (
     <>
       <div id="experience" className="container">
-        <h2>Experience Section</h2>
+        <h2>Experience & Education</h2>
         
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-            date="2011 - present"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<WorkIcon/>}
+            // contentStyle={{ background: 'rgb(33, 150, 243)', color: '#172C3C' }}
+            // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="June 2022 - October 2022"
+            iconStyle={{ background: '#172C3C', color: '#fff' }}
+            icon={<ComputerIcon/>}
           >
-            <h3 className="vertical-timeline-element-title">Creative Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+            <h3 className="vertical-timeline-element-title">Software Engineering Immersive</h3>
+            <h4 className="vertical-timeline-element-subtitle">General Assembly</h4>
+            <p>London, UK (Remote)</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="May 2013 - October 2021"
+            iconStyle={{ background: '#B97853', color: '#fff' }}
+            icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Manager</h3>
+            <h4 className="vertical-timeline-element-subtitle">The Seafood Shanty</h4>
+            <p>Edgartown, MA</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="September 2021, Valid Through March 2024"
+            iconStyle={{ background: '#5B6C52', color: '#fff' }}
+            icon={<LocalHospitalIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Registered Nurse</h3>
+            <h4 className="vertical-timeline-element-subtitle">Reg MA License RN 2358207</h4>
+            <p>Massachusetts</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="May 2021 - Present"
+            iconStyle={{ background: '#CCD6A5', color: '#fff' }}
+            icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Bachelor of Science: Nursing</h3>
+            <h4 className="vertical-timeline-element-subtitle">University of Massachusetts Amherst</h4>
+            <p>Amherst, MA</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="May 2021"
+            iconStyle={{ background: '#CCD6A5', color: '#fff' }}
+            icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Associate Degree: Nursing</h3>
+            <h4 className="vertical-timeline-element-subtitle">Massasoit Community College</h4>
+            <p>Brockton, MA</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="September 2019 - May 2021"
+            iconStyle={{ background: '#5B6C52', color: '#fff' }}
+            icon={<LocalHospitalIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Student Nurse</h3>
+            <h4 className="vertical-timeline-element-subtitle">Signature Healthcare Brockton Hospital, Brockton Veterans Association Medical Center, Good Samaritan Medical Center, New England Sinai Hospital</h4>
+            <p>Brockton, MA & Stoughton, MA
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            date="June 2008 - March 2020"
+            iconStyle={{ background: '#B97853', color: '#fff' }}
             icon={<WorkIcon />}
           >
-            <h3 className="vertical-timeline-element-title">Art Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2008 - 2010"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<WorkIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-            <p>
-              User Experience, Visual Design
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2006 - 2008"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<WorkIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-            <p>
-              User Experience, Visual Design
-            </p>
+            <h3 className="vertical-timeline-element-title">Manager</h3>
+            <h4 className="vertical-timeline-element-subtitle">Bosworth Place Inc. (Beantown Pub, Beantown Pub Cafe, The Hub Pub)</h4>
+            <p>Boston, MA</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="April 2013"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-            icon={<SchoolIcon />}
+            date="August 2016"
+            iconStyle={{ background: '#172C3C', color: '#fff' }}
+            icon={<ComputerIcon />}
           >
-            <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-            <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-            <p>
-              Strategy, Social Media
-            </p>
+            <h3 className="vertical-timeline-element-title">Front-End Web Development</h3>
+            <h4 className="vertical-timeline-element-subtitle">General Assembly</h4>
+            <p>Boston, MA</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="November 2012"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+            date="February 2015"
+            iconStyle={{ background: '#CCD6A5', color: '#fff' }}
             icon={<SchoolIcon />}
           >
-            <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-            <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design
-            </p>
+            <h3 className="vertical-timeline-element-title">Bachelor of Science: Biochemical Engineering</h3>
+            <h4 className="vertical-timeline-element-subtitle">University of Massachusetts Amherst</h4>
+            <p>Amherst, MA</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="2002 - 2006"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-            icon={<SchoolIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-            <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-            <p>
-              Creative Direction, Visual Design
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+            iconStyle={{ background: '#172C3C', color: '#fff' }}
             icon={<StarIcon />}
           />
         </VerticalTimeline>
