@@ -40,7 +40,7 @@ const Experience = () => {
             className="vertical-timeline-element--work"
             contentStyle={{ color: '#172C3C', borderTop: '2px solid #5B6C52' }}
             contentArrowStyle={{ borderRight: '7px solid  #5B6C52' }}
-            date="September 202 - Valid Through March 2024"
+            date="September 2022 - Valid Through March 2024"
             iconStyle={{ background: '#5B6C52', color: '#fff' }}
             icon={<LocalHospitalIcon />}
           >
