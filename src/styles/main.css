@@ -84,6 +84,7 @@ nav {
   top: 0;
   background-color: #FCF9F4 !important;
   z-index: 1;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
 }
 
 .video-container {
@@ -260,9 +261,10 @@ video {
 
 .project {
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 5%;
+  border-radius: 25px;
   background-color: white;
   margin: 2rem 0;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
@@ -349,7 +351,16 @@ video {
   }
 }
 .about-wrapper img {
-  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 8px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h2 {
+  margin-bottom: 2rem;
+}
+.about-text p {
+  margin-top: 1rem;
 }
 
 .about-title {
@@ -364,12 +375,21 @@ video {
 }
 
 .btn {
+  transition: color 0.25s;
+  font-size: 1.25rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 5%;
-  width: 150px;
+  border-radius: 8px;
+  width: 200px;
   padding: 10px;
   background-color: white;
   margin: 2rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  color: #E2CDB5;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .contact-flex {
@@ -385,6 +405,7 @@ video {
   border: solid 1px #E2CDB5;
   max-width: 200px;
   margin: 3rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .contact-wrapper a, #about a {
