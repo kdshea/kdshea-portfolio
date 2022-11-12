@@ -14,8 +14,8 @@ const Experience = () => {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            // contentStyle={{ background: 'rgb(33, 150, 243)', color: '#172C3C' }}
-            // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            contentStyle={{ color: '#172C3C', borderTop: '2px solid #172C3C' }}
+            contentArrowStyle={{ borderRight: '7px solid  #172C3C' }}
             date="June 2022 - October 2022"
             iconStyle={{ background: '#172C3C', color: '#fff' }}
             icon={<ComputerIcon/>}
@@ -26,6 +26,8 @@ const Experience = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            contentStyle={{ color: '#172C3C', borderTop: '2px solid #B97853' }}
+            contentArrowStyle={{ borderRight: '7px solid  #B97853' }}
             date="May 2013 - October 2021"
             iconStyle={{ background: '#B97853', color: '#fff' }}
             icon={<WorkIcon />}
@@ -36,7 +38,9 @@ const Experience = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="September 2021, Valid Through March 2024"
+            contentStyle={{ color: '#172C3C', borderTop: '2px solid #5B6C52' }}
+            contentArrowStyle={{ borderRight: '7px solid  #5B6C52' }}
+            date="September 202 - Valid Through March 2024"
             iconStyle={{ background: '#5B6C52', color: '#fff' }}
             icon={<LocalHospitalIcon />}
           >
@@ -46,6 +50,8 @@ const Experience = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
+            contentStyle={{ color: '#172C3C', borderTop: '2px solid #CCD6A5' }}
+            contentArrowStyle={{ borderRight: '7px solid  #CCD6A5' }}
             date="May 2021 - Present"
             iconStyle={{ background: '#CCD6A5', color: '#fff' }}
             icon={<SchoolIcon />}
@@ -56,6 +62,8 @@ const Experience = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
+            contentStyle={{ color: '#172C3C', borderTop: '2px solid #CCD6A5' }}
+            contentArrowStyle={{ borderRight: '7px solid  #CCD6A5' }}
             date="May 2021"
             iconStyle={{ background: '#CCD6A5', color: '#fff' }}
             icon={<SchoolIcon />}
@@ -66,6 +74,8 @@ const Experience = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
+            contentStyle={{ color: '#172C3C', borderTop: '2px solid #5B6C52' }}
+            contentArrowStyle={{ borderRight: '7px solid  #5B6C52' }}
             date="September 2019 - May 2021"
             iconStyle={{ background: '#5B6C52', color: '#fff' }}
             icon={<LocalHospitalIcon />}
@@ -77,6 +87,8 @@ const Experience = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            contentStyle={{ color: '#172C3C', borderTop: '2px solid #B97853' }}
+            contentArrowStyle={{ borderRight: '7px solid  #B97853' }}
             date="June 2008 - March 2020"
             iconStyle={{ background: '#B97853', color: '#fff' }}
             icon={<WorkIcon />}
@@ -87,6 +99,8 @@ const Experience = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
+            contentStyle={{ color: '#172C3C', borderTop: '2px solid #172C3C' }}
+            contentArrowStyle={{ borderRight: '7px solid  #172C3C' }}
             date="August 2016"
             iconStyle={{ background: '#172C3C', color: '#fff' }}
             icon={<ComputerIcon />}
@@ -97,6 +111,8 @@ const Experience = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
+            contentStyle={{ color: '#172C3C', borderTop: '2px solid #CCD6A5' }}
+            contentArrowStyle={{ borderRight: '7px solid  #CCD6A5' }}
             date="February 2015"
             iconStyle={{ background: '#CCD6A5', color: '#fff' }}
             icon={<SchoolIcon />}
