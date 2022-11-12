@@ -4,9 +4,13 @@ import images from '../Images'
 
 
 const About = () => {
-  const [isHidden, setIsHidden] = useState('true')
-  const handleToggle = () => {
-    setIsHidden(!isHidden)
+  const [aboutIsHidden, setAboutIsHidden] = useState('true')
+  const handleAboutToggle = () => {
+    setAboutIsHidden(!aboutIsHidden)
+  }
+  const [galleryIsHidden, setGalleryIsHidden] = useState('true')
+  const handleGalleryToggle = () => {
+    setGalleryIsHidden(!galleryIsHidden)
   }
 
   return (
@@ -18,36 +22,49 @@ const About = () => {
           <p>Eget felis eget nunc lobortis mattis aliquam faucibus purus. Nam aliquam sem et tortor consequat id. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Platea dictumst vestibulum rhoncus est pellentesque. Integer malesuada nunc vel risus. Sed cras ornare arcu dui.</p>
         </div>
         <div>
-          <button onClick={handleToggle}>More About Me</button>
+          <button className={ aboutIsHidden ? null : 'display-none' }onClick={handleAboutToggle}>More About Me</button>
+          <button className={ aboutIsHidden ? 'display-none' : null }onClick={handleAboutToggle}>Less</button>
         </div>
-        <div className={ isHidden ? 'more-about display-none' : 'more-about' }>
+        <div className={ aboutIsHidden ? 'more-about display-none' : 'more-about' }>
           <div className="about-reading">
-            <h3>Reading</h3>
-            <div>
-              <a href="https://www.goodreads.com/kdshea" target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-goodreads"></i>
-                <span className="link-label"> Goodreads/kdshea</span>
-              </a>
+            <div className="about-title">
+              <div>
+                <h3>Reading</h3>
+              </div>
+              <div>
+                <a href="https://www.goodreads.com/kdshea" target="_blank" rel="noopener noreferrer">
+                  <i className="fa-brands fa-goodreads"></i>
+                  <span className="link-label"> Goodreads/kdshea</span>
+                </a>
+              </div>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
           </div>
           <div className="about-listening">
-            <h3>Listening</h3>
-            <div>
-              <a href="https://open.spotify.com/user/d8n5dvxeniup3btt90unrjuww" target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-spotify"></i>
-                <span className="link-label"> Spotify/kdshea</span>
-              </a>
+            <div className="about-title">
+              <div>
+                <h3>Listening</h3>
+              </div>
+              <div>
+                <a href="https://open.spotify.com/user/d8n5dvxeniup3btt90unrjuww" target="_blank" rel="noopener noreferrer">
+                  <i className="fa-brands fa-spotify"></i>
+                  <span className="link-label"> Spotify/kdshea</span>
+                </a>
+              </div>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
           </div>
           <div className="about-travel">
-            <h3>Travel</h3>
-            <div>
-              <a href="https://www.amcharts.com/visited_countries/#DK,FR,DE,IE,IT,NL,CH,GB,VA,BS,CA,CR,JM,MX,US,IN,ID,MY,LK,TH,AE,VN" target="_blank" rel="noopener noreferrer">
-                <i className="fa-solid fa-earth-americas"></i>
-                <span className="link-label"> Interactive Map</span>
-              </a>
+            <div className="about-title">
+              <div>
+                <h3>Travel</h3>
+              </div>
+              <div>
+                <a href="https://www.amcharts.com/visited_countries/#DK,FR,DE,IE,IT,NL,CH,GB,VA,BS,CA,CR,JM,MX,US,IN,ID,MY,LK,TH,AE,VN" target="_blank" rel="noopener noreferrer">
+                  <i className="fa-solid fa-earth-americas"></i>
+                  <span className="link-label"> Interactive Map</span>
+                </a>
+              </div>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
             {/* <div className="map-wrapper">
@@ -57,16 +74,19 @@ const About = () => {
             </div> */}
           </div>
           <div className="about-photography">
-            <h3>Photography</h3>
-            <div>
-              <a href="https://flickr.com/photos/kdshea35/" target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-flickr"></i>
-                <span className="link-label"> Flickr/kdshea35</span>
-              </a>
+            <div className="about-title">
+              <div>
+                <h3>Photography</h3>
+              </div>
+              <div>
+                <a href="https://flickr.com/photos/kdshea35/" target="_blank" rel="noopener noreferrer">
+                  <i className="fa-brands fa-flickr"></i>
+                  <span className="link-label"> Flickr/kdshea35</span>
+                </a>
+              </div>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
-
-            <div className="photo-wrapper">
+            <div className={ galleryIsHidden ? 'photo-wrapper display-none' : 'photo-wrapper' }>
               <ResponsiveMasonry
                 columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
                 <Masonry gutter='1.5rem'>
@@ -76,6 +96,10 @@ const About = () => {
                   ))}
                 </Masonry>
               </ResponsiveMasonry>
+            </div>
+            <div>
+              <button className={ galleryIsHidden ? null : 'display-none' }onClick={handleGalleryToggle}>View Gallery</button>
+              <button className={ galleryIsHidden ? 'display-none' : null }onClick={handleGalleryToggle}>Hide</button>
             </div>
           </div>
         </div>

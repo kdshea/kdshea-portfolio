@@ -12,6 +12,7 @@ $cursive: 'Yellowtail', cursive;
 $light: 300;
 $extra-bold: 800;
 
+// MISC PAGE STYLES
 
 * {
   margin: 0;
@@ -140,12 +141,14 @@ video {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   color: $baby-powder;
+
   h1 {
     font-family: $headings;
     font-weight: normal;
     font-size: 5rem;
     margin: 2rem auto;
   }
+
   i {
     padding-top: 20vh;
   }
@@ -206,7 +209,6 @@ video {
 
 // PROJECTS SECTION STYLES
 
-
 .mac-svg {
   background-image: none;
   margin: 0 auto;
@@ -215,7 +217,6 @@ video {
   min-width: 300px;
   min-height: 375px;
 }
-
 
 @media only screen and (min-width : 768px) {
   .mac-svg{
@@ -244,15 +245,18 @@ video {
 .carousel{
   height: 350.5px;
 }
+
 .carousel-cell{
   height: 100%;
 }
+
 .flickity-viewport{
   height: 350.5px;
   img{
     max-width: 100%;
   }
 }
+
 .flickity-page-dots {
   bottom: 10px; 
 }
@@ -269,11 +273,13 @@ video {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+
   .project-left, .project-right {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
+
   .project-icons {
     display: flex;
     flex-wrap: wrap;
@@ -282,6 +288,7 @@ video {
     list-style: none;
     padding: 0;
     margin: 0;
+
     .cell {
       background-color: $baby-powder;
     }
@@ -305,6 +312,7 @@ video {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+
     a {
       text-decoration: none;
       color: $dark-blue;
@@ -312,6 +320,7 @@ video {
       transition: color 0.25s;
       font-size: 1.25rem;
     }
+
     a:hover {
       color:$tan;
     }
@@ -340,11 +349,16 @@ video {
     border-radius: 3px;
   }
 }
-.map-wrapper {
-  max-width: 100%;
-  img {
-    max-height: 50vh;
-    max-width: 100%;
+
+.about-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    padding-right: 3rem;
   }
 }
 
@@ -356,7 +370,6 @@ video {
   justify-content:center;
   align-items: center;
   text-align: left;
-
 }
 
 .kate-pic {
@@ -376,30 +389,33 @@ video {
     transition: color 0.25s;
     font-size: 1.5rem;
   }
+
   a:hover {
     color:$tan;
   }
+
   @media only screen and (max-width : 576px) {
     .contact-flex {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
+
       .links {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
         div {
           padding: 0 15px;
         }
       }
     }
+
     a {
       font-size: 3rem;
     }
-    // a:hover {
-    //   font-size: 3.25rem;
-    // }
+
     .link-label {
       display: none;
     }
@@ -411,12 +427,14 @@ video {
 footer{
   background-color: $dark-blue;
   color: $baby-powder;
+
   a {
     text-decoration: none;
     color: $baby-powder;
     -webkit-transition: color 0.25s;
     transition: color 0.25s;
   }
+
   a:hover {
     color:$tan;
   }
@@ -428,12 +446,14 @@ footer{
   align-items: center;
   justify-content: space-around;
 }
+
 .feedback {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
   span {
     margin-right: 1rem;
   }
@@ -442,42 +462,3 @@ footer{
 .copyright {
   margin-top: 2rem;
 }
-
-// Coming Soon Styles
-// .coming-soon {
-//   color: $baby-powder;
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   top: 0;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   text-align: center;
-//   font-family: $body;
-//   font-weight: $light;
-//   text-shadow: 4px 3px 0px rgba(0,0,0,0.15);
-//   h1 {
-//     font-family: $cursive;
-//     font-weight: normal;
-//     font-size: 5rem;
-//     margin: 2rem auto;
-//   }
-//   h4{
-//     font-weight: normal;
-//   }
-//   .title {
-//     font-family: $headings;
-//     font-size: 2rem;
-//     margin: 2rem auto;
-//   }
-//   p {
-//     font-size: 1.5rem;
-//   }
-//   .connect {
-//     margin-top: 1.5rem;
-
-//   }
-
-// }

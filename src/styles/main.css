@@ -327,12 +327,15 @@ video {
   border-radius: 3px;
 }
 
-.map-wrapper {
-  max-width: 100%;
+.about-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
-.map-wrapper img {
-  max-height: 50vh;
-  max-width: 100%;
+.about-title h3 {
+  padding-right: 3rem;
 }
 
 .contact-flex {
