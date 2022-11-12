@@ -71,7 +71,7 @@ const Experience = () => {
             icon={<LocalHospitalIcon />}
           >
             <h3 className="vertical-timeline-element-title">Student Nurse</h3>
-            <h4 className="vertical-timeline-element-subtitle">Signature Healthcare Brockton Hospital, Brockton Veterans Association Medical Center, Good Samaritan Medical Center, New England Sinai Hospital</h4>
+            <h4 className="vertical-timeline-element-subtitle">Brockton Hospital, Brockton VA Medical Center, Good Samaritan Medical Center, New England Sinai Hospital</h4>
             <p>Brockton, MA & Stoughton, MA
             </p>
           </VerticalTimelineElement>
@@ -82,7 +82,7 @@ const Experience = () => {
             icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">Manager</h3>
-            <h4 className="vertical-timeline-element-subtitle">Bosworth Place Inc. (Beantown Pub, Beantown Pub Cafe, The Hub Pub)</h4>
+            <h4 className="vertical-timeline-element-subtitle">Bosworth Place Inc: Beantown Pub, Beantown Pub Cafe, The Hub Pub</h4>
             <p>Boston, MA</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -106,7 +106,7 @@ const Experience = () => {
             <p>Amherst, MA</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            iconStyle={{ background: '#172C3C', color: '#fff' }}
+            iconStyle={{ background: '#E2CDB5', color: '#fff' }}
             icon={<StarIcon />}
           />
         </VerticalTimeline>

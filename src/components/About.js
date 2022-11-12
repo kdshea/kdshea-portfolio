@@ -16,6 +16,7 @@ const About = () => {
         </div>
         <div className="about-travel">
           <h3>Travel</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
           <div className="map-wrapper">
             <img src={Map}/>
           </div>
@@ -23,6 +24,7 @@ const About = () => {
         </div>
         <div className="about-photography">
           <h3>Photography</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
           <div>
             <a href="https://flickr.com/photos/kdshea35/" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-flickr"></i>

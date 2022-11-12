@@ -221,7 +221,6 @@ video {
     background-size: contain;
     width: 100%;
     min-height: 530px;
-    
   }
 }
 
@@ -252,6 +251,72 @@ video {
 }
 .flickity-page-dots {
   bottom: 10px; 
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .project-left, .project-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .project-icons li {
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5%;
+    margin: 10px 5px 5px 5px;
+    width:75px;
+    height: 75px;
+    align-items: center;
+    i {
+      font-size: 1rem;
+    }
+  }
+
+  .project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    a {
+      text-decoration: none;
+      color: $dark-blue;
+      -webkit-transition: color 0.25s;
+      transition: color 0.25s;
+      font-size: 1.25rem;
+    }
+    a:hover {
+      color:$tan;
+    }
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .info-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .project-left, .project-right {
+      width: 50%;
+    }
+  }
+
 }
 
 // ABOUT SECTION STYLES
@@ -288,18 +353,16 @@ video {
   }
 }
 
-.contact-wrapper, .about-photography{
+.contact-wrapper, .about-photography {
   a {
     text-decoration: none;
     color: $dark-blue;
-    -webkit-transition: color 0.5s, font-size 0.5s;
-    transition: color 0.5s, font-size 0.5s;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
     font-size: 1.5rem;
   }
   a:hover {
-    font-size: 1.75rem;
-    color:$dark-green;
-    font-weight: normal;
+    color:$tan;
   }
   @media only screen and (max-width : 576px) {
     .contact-flex {
@@ -319,9 +382,9 @@ video {
     a {
       font-size: 3rem;
     }
-    a:hover {
-      font-size: 3.25rem;
-    }
+    // a:hover {
+    //   font-size: 3.25rem;
+    // }
     .link-label {
       display: none;
     }
