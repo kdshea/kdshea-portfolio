@@ -20,6 +20,10 @@ html {
   margin-top: -20vh;
 }
 
+.display-none {
+  display: none;
+}
+
 .image-section {
   background-attachment: fixed;
   background-position: center;
@@ -307,6 +311,7 @@ video {
   }
   .info-wrapper .project-left, .info-wrapper .project-right {
     width: 50%;
+    max-width: 475px;
   }
 }
 .about-wrapper img {
@@ -324,7 +329,7 @@ video {
 .contact-flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: left;
 }
@@ -333,36 +338,37 @@ video {
   border-radius: 50%;
   border: solid 1px #E2CDB5;
   max-width: 200px;
+  margin: 3rem;
 }
 
-.contact-wrapper a, .about-photography a {
+.contact-wrapper a, #about a {
   text-decoration: none;
   color: #172C3C;
   transition: color 0.25s;
   font-size: 1.5rem;
 }
-.contact-wrapper a:hover, .about-photography a:hover {
+.contact-wrapper a:hover, #about a:hover {
   color: #E2CDB5;
 }
 @media only screen and (max-width: 576px) {
-  .contact-wrapper .contact-flex, .about-photography .contact-flex {
+  .contact-wrapper .contact-flex, #about .contact-flex {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
-  .contact-wrapper .contact-flex .links, .about-photography .contact-flex .links {
+  .contact-wrapper .contact-flex .links, #about .contact-flex .links {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-  .contact-wrapper .contact-flex .links div, .about-photography .contact-flex .links div {
+  .contact-wrapper .contact-flex .links div, #about .contact-flex .links div {
     padding: 0 15px;
   }
-  .contact-wrapper a, .about-photography a {
+  .contact-wrapper a, #about a {
     font-size: 3rem;
   }
-  .contact-wrapper .link-label, .about-photography .link-label {
+  .contact-wrapper .link-label, #about .link-label {
     display: none;
   }
 }
@@ -370,4 +376,34 @@ video {
 footer {
   background-color: #172C3C;
   color: #FCF9F4;
+}
+footer a {
+  text-decoration: none;
+  color: #FCF9F4;
+  transition: color 0.25s;
+}
+footer a:hover {
+  color: #E2CDB5;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.feedback span {
+  margin-right: 1rem;
+}
+
+.copyright {
+  margin-top: 2rem;
 }/*# sourceMappingURL=main.css.map */

@@ -35,6 +35,10 @@ html{
   margin-top: -20vh;
 }
 
+.display-none {
+  display: none;
+}
+
 // BACKGROUND IMAGES
 
 .image-section {
@@ -314,6 +318,7 @@ video {
     flex-wrap: wrap;
     .project-left, .project-right {
       width: 50%;
+      max-width: 475px;
     }
   }
 
@@ -339,7 +344,7 @@ video {
 .contact-flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:center;
   align-items: center;
   text-align: left;
 
@@ -350,10 +355,11 @@ video {
     border-radius: 50%;
     border: solid 1px $tan;
     max-width: 200px;
+    margin: 3rem;
   }
 }
 
-.contact-wrapper, .about-photography {
+.contact-wrapper, #about {
   a {
     text-decoration: none;
     color: $dark-blue;
@@ -396,6 +402,36 @@ video {
 footer{
   background-color: $dark-blue;
   color: $baby-powder;
+  a {
+    text-decoration: none;
+    color: $baby-powder;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
+  }
+  a:hover {
+    color:$tan;
+  }
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.feedback {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  span {
+    margin-right: 1rem;
+  }
+}
+
+.copyright {
+  margin-top: 2rem;
 }
 
 // Coming Soon Styles
