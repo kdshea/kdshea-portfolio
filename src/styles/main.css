@@ -252,6 +252,12 @@ video {
   bottom: 10px;
 }
 
+.project {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5%;
+  background-color: white;
+}
+
 .info-wrapper {
   display: flex;
   flex-direction: column;
@@ -272,6 +278,9 @@ video {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.info-wrapper .project-icons .cell {
+  background-color: #FCF9F4;
 }
 .info-wrapper .project-icons li {
   justify-content: center;

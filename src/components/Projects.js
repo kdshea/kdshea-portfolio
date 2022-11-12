@@ -1,83 +1,18 @@
 import React from 'react'
-import Flickity from 'react-flickity-component'
-import Palm1 from '../assets/palm-4.jpg'
-
-const flickityOptions = {
-  wrapAround: true,
-  autoPlay: true,
-  setGallerySize: false,
-}
-
-function Carousel() {
-  return (
-    <Flickity options={flickityOptions} >
-      <img src={Palm1} />
-      <img src={Palm1} />
-      <img src={Palm1} />
-    </Flickity>
-  )
-}
+import Project1 from './Project1'
+import Project2 from './Project2'
+import Project3 from './Project3'
+import Project4 from './Project4'
 
 const Projects = () => {
   return (
     <>
       <div id="projects" className="container">
         <h2>Projects</h2>
-        <div className="project">
-          <div className="project-image">
-            <div className="mac-svg">
-              <div className="carousel-container">
-                <Carousel />
-              </div>
-            </div>
-          </div>
-          <div className="project-info">
-            <div className="info-wrapper">
-              <div className="project-left">
-                <div>
-                  <h3>Project Name</h3>
-                </div>
-                <div>
-                  <ul className="project-icons">
-                    <li className="cell">
-                      <i className="devicon-html5-plain"></i>
-                      <span>HTML 5</span>
-                    </li>
-                    <li className="cell">
-                      <i className="devicon-css3-plain"></i>
-                      <span>CSS3</span>
-                    </li>
-                    <li className="cell">
-                      <i className="devicon-sass-original"></i>
-                      <span>Sass</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="project-right">
-                <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
-                </div>
-                <div>
-                  <div className="project-links">
-                    <div>
-                      <a href="">
-                        <i className="fa-brands fa-square-github"></i>
-                        <span className="link-label"> View on GitHub</span>
-                      </a>
-                    </div>
-                    <div>
-                      <a href="">
-                        <i className="fa-solid fa-link"></i>
-                        <span className="link-label"> Project Link</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Project1 />
+        <Project2 />
+        <Project3 />
+        <Project4 />
       </div>
       <div className="image-section palm-3"></div>
     </>

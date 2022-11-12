@@ -57,7 +57,7 @@ const Skills = () => {
             <span>GitHub</span>
           </li>
           <li className="cell">
-            <i className="devicon-github-original"></i>
+            <i className="devicon-heroku-original"></i>
             <span>Heroku</span>
           </li>
           <li className="cell">
