@@ -29,7 +29,6 @@ const NavBar = () => {
               <NavDropdown.Item href="mailto: daishea@gmail.com?subject=Hello" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-square-envelope"></i> Email</NavDropdown.Item>
               <NavDropdown.Item href="https://www.linkedin.com/in/katedshea/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i>  LinkedIn</NavDropdown.Item>
               <NavDropdown.Item href="https://github.com/kdshea" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-square-github"></i> GitHub</NavDropdown.Item>
-              <NavDropdown.Item href="https://twitter.com/Kate_Shea_" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-square-twitter"></i> Twitter</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

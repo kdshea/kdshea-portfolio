@@ -6,7 +6,11 @@ import images from '../Images'
 const About = () => {
   const [aboutIsHidden, setAboutIsHidden] = useState('true')
   const handleAboutToggle = () => {
+    if (!aboutIsHidden) {
+      setGalleryIsHidden('true')
+    }
     setAboutIsHidden(!aboutIsHidden)
+
   }
   const [galleryIsHidden, setGalleryIsHidden] = useState('true')
   const handleGalleryToggle = () => {
@@ -22,8 +26,8 @@ const About = () => {
           <p>Eget felis eget nunc lobortis mattis aliquam faucibus purus. Nam aliquam sem et tortor consequat id. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Platea dictumst vestibulum rhoncus est pellentesque. Integer malesuada nunc vel risus. Sed cras ornare arcu dui.</p>
         </div>
         <div>
-          <button className={ aboutIsHidden ? null : 'display-none' }onClick={handleAboutToggle}>More About Me</button>
-          <button className={ aboutIsHidden ? 'display-none' : null }onClick={handleAboutToggle}>Less</button>
+          <button className={ aboutIsHidden ? 'btn' : 'display-none btn' }onClick={handleAboutToggle}>More About Me</button>
+          <button className={ aboutIsHidden ? 'display-none btn' : 'btn' }onClick={handleAboutToggle}>Less</button>
         </div>
         <div className={ aboutIsHidden ? 'more-about display-none' : 'more-about' }>
           <div className="about-reading">
@@ -98,8 +102,8 @@ const About = () => {
               </ResponsiveMasonry>
             </div>
             <div>
-              <button className={ galleryIsHidden ? null : 'display-none' }onClick={handleGalleryToggle}>View Gallery</button>
-              <button className={ galleryIsHidden ? 'display-none' : null }onClick={handleGalleryToggle}>Hide</button>
+              <button className={ galleryIsHidden ? 'btn' : 'display-none btn' }onClick={handleGalleryToggle}>View Gallery</button>
+              <button className={ galleryIsHidden ? 'display-none btn' : 'btn' }onClick={handleGalleryToggle}>Hide</button>
             </div>
           </div>
         </div>

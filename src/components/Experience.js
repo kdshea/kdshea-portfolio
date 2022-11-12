@@ -105,7 +105,7 @@ const Experience = () => {
             iconStyle={{ background: '#172C3C', color: '#fff' }}
             icon={<ComputerIcon />}
           >
-            <h3 className="vertical-timeline-element-title">Front-End Web Development</h3>
+            <h3 className="vertical-timeline-element-title">Front End Web Development</h3>
             <h4 className="vertical-timeline-element-subtitle">General Assembly</h4>
             <p>Boston, MA</p>
           </VerticalTimelineElement>

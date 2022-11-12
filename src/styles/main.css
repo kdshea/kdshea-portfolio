@@ -20,6 +20,10 @@ html {
   margin-top: -20vh;
 }
 
+h2 {
+  margin-top: 2rem;
+}
+
 .display-none {
   display: none;
 }
@@ -161,6 +165,10 @@ video {
           animation: bounce 0.75s ease infinite alternate;
 }
 
+#skills {
+  margin-bottom: 2rem;
+}
+
 .skill-icons {
   display: flex;
   flex-wrap: wrap;
@@ -207,7 +215,7 @@ video {
   position: relative;
   width: 100%;
   min-width: 300px;
-  min-height: 375px;
+  min-height: 275px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -219,22 +227,20 @@ video {
     width: 100%;
     min-height: 530px;
   }
+  .carousel-container {
+    width: 100%;
+    max-width: 616px;
+  }
 }
 .carousel-container {
-  width: 100%;
+  width: 90%;
   max-width: 616px;
-  height: 350.5px;
+  height: 275px;
   margin: 0 auto;
   position: absolute;
   left: 0;
   right: 0;
   top: 4%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.carousel {
-  height: 350.5px;
 }
 
 .carousel-cell {
@@ -242,7 +248,7 @@ video {
 }
 
 .flickity-viewport {
-  height: 350.5px;
+  height: 275px;
 }
 .flickity-viewport img {
   max-width: 100%;
@@ -256,6 +262,15 @@ video {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 5%;
   background-color: white;
+  margin: 2rem 0;
+}
+
+.project-image {
+  margin-top: 2rem;
+}
+
+.project-info {
+  margin: 2rem;
 }
 
 .info-wrapper {
@@ -269,6 +284,9 @@ video {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+.info-wrapper .project-left p, .info-wrapper .project-right p {
+  margin-top: 1rem;
 }
 .info-wrapper .project-icons {
   display: flex;
@@ -299,6 +317,7 @@ video {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-left: 1rem;
 }
 .info-wrapper .project-links a {
   text-decoration: none;
@@ -311,6 +330,12 @@ video {
 }
 
 @media only screen and (min-width: 768px) {
+  .carousel-container {
+    height: 350.5px;
+  }
+  .flickity-viewport {
+    height: 350.5px;
+  }
   .info-wrapper {
     display: flex;
     flex-direction: row;
@@ -336,6 +361,15 @@ video {
 }
 .about-title h3 {
   padding-right: 3rem;
+}
+
+.btn {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5%;
+  width: 150px;
+  padding: 10px;
+  background-color: white;
+  margin: 2rem;
 }
 
 .contact-flex {
@@ -417,5 +451,5 @@ footer a:hover {
 }
 
 .copyright {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }/*# sourceMappingURL=main.css.map */
