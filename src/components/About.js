@@ -3,6 +3,7 @@ import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 import Card from 'react-bootstrap/Card'
 import Book1 from '../assets/book1.jpg'
 import Book2 from '../assets/book2.jpg'
+import Audiobook1 from '../assets/audiobook1.jpg'
 import Podcast1 from '../assets/podcast1.jpg'
 import Podcast2 from '../assets/podcast2.jpg'
 import Music1 from '../assets/music1.jpg'
@@ -73,6 +74,20 @@ const About = () => {
                 <Card.Body>
                   <Card.Title>Everything I Never Told You</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">Celeste Ng</Card.Subtitle>
+                  {/* <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card&#39;s content.
+                  </Card.Text> */}
+                </Card.Body>
+              </Card>
+              <Card>
+                <Card.Header>Audiobook</Card.Header>
+                <div className="card-img-wrapper">
+                  <Card.Img variant="top" src={Audiobook1} />
+                </div>
+                <Card.Body>
+                  <Card.Title>Why We Sleep</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Matthew Walker, PhD</Card.Subtitle>
                   {/* <Card.Text>
                     Some quick example text to build on the card title and make up the
                     bulk of the card&#39;s content.
