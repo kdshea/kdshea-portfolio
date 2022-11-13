@@ -1,6 +1,6 @@
 import React from 'react'
 import Flickity from 'react-flickity-component'
-import Palm1 from '../assets/palm-4.jpg'
+import Img1 from '../assets/Projects/Project4/project4-1.jpg'
 
 const flickityOptions = {
   wrapAround: true,
@@ -11,9 +11,9 @@ const flickityOptions = {
 function Carousel() {
   return (
     <Flickity options={flickityOptions} >
-      <img src={Palm1} />
-      <img src={Palm1} />
-      <img src={Palm1} />
+      <img src={Img1} />
+      <img src={Img1} />
+      <img src={Img1} />
     </Flickity>
   )
 }
@@ -36,6 +36,12 @@ const Project4 = () => {
                 <h3>Project 4 Name</h3>
               </div>
               <div>
+              JavaScript
+CSS3
+HTML5
+GitHub Pages
+Chrome Developer Tools
+Excalidraw
                 <ul className="project-icons">
                   <li className="cell">
                     <i className="devicon-html5-plain"></i>
@@ -54,18 +60,18 @@ const Project4 = () => {
             </div>
             <div className="project-right">
               <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
+                <p>A browser-based Tetris clone game using grid movement built using HTML, CSS, and JavaScript</p>
               </div>
               <div>
                 <div className="project-links">
                   <div>
-                    <a href="">
+                    <a href="https://github.com/kdshea/Tetris-Clone" target="_blank" rel="noopener noreferrer">
                       <i className="fa-brands fa-square-github"></i>
                       <span className="link-label"> View on GitHub</span>
                     </a>
                   </div>
                   <div>
-                    <a href="">
+                    <a href="https://bit.ly/kdshea-tetris" target="_blank" rel="noopener noreferrer">
                       <i className="fa-solid fa-link"></i>
                       <span className="link-label"> Project Link</span>
                     </a>

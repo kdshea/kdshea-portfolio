@@ -1,4 +1,4 @@
-import videoBg from '../assets/videoBg.mp4'
+import videoBg from '../assets/Backgrounds/videoBg.mp4'
 
 const Hero = () => {
   return (

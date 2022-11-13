@@ -56,35 +56,35 @@ h2 {
 }
 
 .palm-1 {
-  background-image: url(../assets/palm-1.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  background-image: url(../assets/Backgrounds/palm-1.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
   background-blend-mode: overlay;
 }
 .palm-2 {
-  background-image: url(../assets/palm-2.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  background-image: url(../assets/Backgrounds/palm-2.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
   background-blend-mode: overlay;
 }
 .palm-3 {
-  background-image: url(../assets/palm-3.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  background-image: url(../assets/Backgrounds/palm-3.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
   background-blend-mode: overlay;
 }
 .palm-4 {
-  background-image: url(../assets/palm-4.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  background-image: url(../assets/Backgrounds/palm-4.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
   background-blend-mode: overlay;
 }
 .palm-5 {
-  background-image: url(../assets/palm-5.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  background-image: url(../assets/Backgrounds/palm-5.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
   background-blend-mode: overlay;
 }
 .palm-6 {
-  background-image: url(../assets/palm-6.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  background-image: url(../assets/Backgrounds/palm-6.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
   background-blend-mode: overlay;
 }
 .palm-7 {
-  background-image: url(../assets/palm-7.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  background-image: url(../assets/Backgrounds/palm-7.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
   background-blend-mode: overlay;
 }
 .palm-8 {
-  background-image: url(../assets/palm-8.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  background-image: url(../assets/Backgrounds/palm-8.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
   background-blend-mode: overlay;
 }
 
@@ -182,16 +182,21 @@ video {
   margin: 0;
 }
 
-.skill-icons li {
-  justify-content: center;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: 5%;
-  margin: 20px 5px 5px 5px;
-  width: 100px;
-  height: 100px;
-  align-items: center;
-  i {
-    font-size: 2rem;
+.skill-icons {
+  li {
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5%;
+    margin: 20px 5px 5px 5px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    i {
+      font-size: 2rem;
+    } 
+  } 
+  li:hover {
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
   }
 }
 .cell {
@@ -227,7 +232,7 @@ video {
 
 @media only screen and (min-width : 768px) {
   .mac-svg{
-    background-image: url(../assets/mac-screen.png);
+    background-image: url(../assets/Projects/mac-screen.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -313,7 +318,8 @@ video {
     }
   }
   
-  .project-icons li {
+  .project-icons {
+    li {
     justify-content: center;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 5%;
@@ -323,9 +329,12 @@ video {
     align-items: center;
     i {
       font-size: 1rem;
+      }
+    }
+    li:hover {
+      box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
     }
   }
-
   .project-links {
     display: flex;
     flex-direction: row;
@@ -379,6 +388,12 @@ video {
     border-radius: 8px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   }
+
+  p {
+    margin: 1rem auto;
+    max-width: 800px;
+    text-align: center;
+  }
 }
 
 .about-text{
@@ -386,9 +401,6 @@ video {
     margin-bottom: 2rem;
   }
 
-  p {
-    margin-top: 1rem;
-  }
 }
 
 .about-title {
@@ -420,6 +432,22 @@ video {
   color:$tan;
   background-color: white;
   border: 1px solid rgba(0,0,0,.125);
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  max-width: 300px;
+  margin: 2rem auto;
+  img {
+    max-width: 150px;
+    margin: 0.5rem auto;
+  }
 }
 
 // CONTACT SECTION STYLES

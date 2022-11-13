@@ -1,6 +1,6 @@
 import React from 'react'
 import Flickity from 'react-flickity-component'
-import Palm1 from '../assets/palm-4.jpg'
+import Img1 from '../assets/Projects/Project2/project2-1.jpg'
 
 const flickityOptions = {
   wrapAround: true,
@@ -11,9 +11,9 @@ const flickityOptions = {
 function Carousel() {
   return (
     <Flickity options={flickityOptions} >
-      <img src={Palm1} />
-      <img src={Palm1} />
-      <img src={Palm1} />
+      <img src={Img1} />
+      <img src={Img1} />
+      <img src={Img1} />
     </Flickity>
   )
 }
@@ -33,9 +33,34 @@ const Project2 = () => {
           <div className="info-wrapper">
             <div className="project-left">
               <div>
-                <h3>Project 2 Name</h3>
+                <h3>Destinations Library</h3>
               </div>
               <div>
+              Axios
+Buffer
+Cloudinary
+CSS3
+HTML5
+JavaScript
+Node.js
+React Bootstrap
+React Router DOM
+React.js
+Sass
+AWS S3
+Bcrypt
+Buffer
+CORS
+Dotenv
+Express
+Insomnia
+JSON Web Token
+MongoDB
+Mongoose
+Node.js
+Heroku
+Netlify
+
                 <ul className="project-icons">
                   <li className="cell">
                     <i className="devicon-html5-plain"></i>
@@ -54,18 +79,26 @@ const Project2 = () => {
             </div>
             <div className="project-right">
               <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
+                <p>A MongoDB database with CRUD functionality created using Express and Mongoose served to a MERN stack app of travel destinations with user login, authorization, and image uploads.</p>
               </div>
               <div>
                 <div className="project-links">
                   <div>
-                    <a href="">
-                      <i className="fa-brands fa-square-github"></i>
-                      <span className="link-label"> View on GitHub</span>
-                    </a>
+                    <div>
+                      <a href="" target="_blank" rel="noopener noreferrer">
+                        <i className="fa-brands fa-square-github"></i>
+                        <span className="link-label"> View Front End on GitHub</span>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://github.com/kdshea/Travel-Library-Back-End" target="_blank" rel="noopener noreferrer">
+                        <i className="fa-brands fa-square-github"></i>
+                        <span className="link-label"> View Back End on GitHub</span>
+                      </a>
+                    </div>
                   </div>
                   <div>
-                    <a href="">
+                    <a href="https://bit.ly/kdshea-travel" target="_blank" rel="noopener noreferrer">
                       <i className="fa-solid fa-link"></i>
                       <span className="link-label"> Project Link</span>
                     </a>

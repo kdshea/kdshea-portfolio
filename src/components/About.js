@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
+import Card from 'react-bootstrap/Card'
+import Book1 from '../assets/book1.jpg'
 import images from '../Images'
 
 
@@ -22,8 +24,9 @@ const About = () => {
       <div id="about" className="container">
         <div className="about-text">
           <h2>About</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
-          <p>Eget felis eget nunc lobortis mattis aliquam faucibus purus. Nam aliquam sem et tortor consequat id. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Platea dictumst vestibulum rhoncus est pellentesque. Integer malesuada nunc vel risus. Sed cras ornare arcu dui.</p>
+          <p>Welcome! My name is Kate Shea. I&#39;m a Boston-based developer transitioning from a career in hospitality. For the last 10 years, I have always been studying something new, earning degrees in biochemical engineering and nursing all while working as a manager in the hospitality industry.</p>
+          <p>Recently while pursuing my second nursing degree, I took a Bioinformatics course that sparked my interest in the intersection between technology and engineering in healthcare, and how to make products that can improve healthcare systems and provide value to patients. I decided to do a software engineering bootcamp and pursue software development. My background gives me a unique perspective: I have worked in client-facing roles in hospitality and nursing, but I also have the technical background of engineering and software development.</p>
+          <p> I&#39;m looking for opportunities to use my skillset to contribute to larger projects and make a positive impact, while continuing to be challenged and grow as a developer.</p>
         </div>
         <div>
           <button className={ aboutIsHidden ? 'btn' : 'display-none btn' }onClick={handleAboutToggle}>More About Me</button>
@@ -42,7 +45,32 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
+            <div className="card-wrapper">
+              <Card>
+                <Card.Header>To Learn</Card.Header>
+                <Card.Img variant="top" src={Book1} />
+                <Card.Body>
+                  <Card.Title>Everything I Never Told You</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Celeste Ng</Card.Subtitle>
+                  {/* <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card&#39;s content.
+                  </Card.Text> */}
+                </Card.Body>
+              </Card>
+              <Card>
+                <Card.Header>For Fun</Card.Header>
+                <Card.Img variant="top" src={Book1} />
+                <Card.Body>
+                  <Card.Title>Everything I Never Told You</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Celeste Ng</Card.Subtitle>
+                  {/* <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card&#39;s content.
+                  </Card.Text> */}
+                </Card.Body>
+              </Card>
+            </div>
           </div>
           <div className="about-listening">
             <div className="about-title">
@@ -56,7 +84,44 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
+            <div className="card-wrapper">
+              <Card>
+                <Card.Header>To Learn</Card.Header>
+                <Card.Img variant="top" src={Book1} />
+                <Card.Body>
+                  <Card.Title>Everything I Never Told You</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Celeste Ng</Card.Subtitle>
+                  {/* <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card&#39;s content.
+                  </Card.Text> */}
+                </Card.Body>
+              </Card>
+              <Card>
+                <Card.Header>For Fun</Card.Header>
+                <Card.Img variant="top" src={Book1} />
+                <Card.Body>
+                  <Card.Title>Everything I Never Told You</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Celeste Ng</Card.Subtitle>
+                  {/* <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card&#39;s content.
+                  </Card.Text> */}
+                </Card.Body>
+              </Card>
+              <Card>
+                <Card.Header>On Repeat</Card.Header>
+                <Card.Img variant="top" src={Book1} />
+                <Card.Body>
+                  <Card.Title>Everything I Never Told You</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Celeste Ng</Card.Subtitle>
+                  {/* <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card&#39;s content.
+                  </Card.Text> */}
+                </Card.Body>
+              </Card>
+            </div>
           </div>
           <div className="about-travel">
             <div className="about-title">
@@ -70,7 +135,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
+            <p> I love to travel and I&#39;ve been to over 20 countries in North and Central America, Europe, South and Southeast Asia. South America is next on my list to explore. I attended a French language immersion elementary school and took French classes through college. I&#39;m still fluent and am always looking for opportunities to practice French. Boston, MA is home, but I’m currently working from Sri Lanka. The major spoken language here is Sinhalese and I&#39;m taking lessons twice a week on Zoom. Check out the map for specific places I have travelled. </p>
             {/* <div className="map-wrapper">
               <a href="https://www.amcharts.com/visited_countries/#DK,FR,DE,IE,IT,NL,CH,GB,VA,BS,CA,CR,JM,MX,US,IN,ID,MY,LK,TH,AE,VN" target="_blank" rel="noopener noreferrer">            
                 <img src={Map}/>
@@ -89,7 +154,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
+            <p> As far as my skill level goes, I would definitely call myself an amateur photopgrapher. I shoot on a Nikon D3300 and my iPhone, and edit using Adobe Lightroom. Recently, I got an underwater housing for my DSLR, and I&#39;m looking forward to learning to take photos in the ocean. I share some photos I&#39;m proud of on Flickr.</p>
             <div className={ galleryIsHidden ? 'photo-wrapper display-none' : 'photo-wrapper' }>
               <ResponsiveMasonry
                 columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
