@@ -377,6 +377,7 @@ video {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 .about-title h3 {
   padding-right: 3rem;
@@ -405,15 +406,34 @@ video {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .card {
-  max-width: 300px;
-  margin: 2rem auto;
+  height: 375px;
+  width: 300px;
+  margin: 1rem auto;
+}
+.card .card-header {
+  margin-bottom: 1rem;
+  background-color: #E2CDB5;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.card .card-img-wrapper {
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card img {
   max-width: 150px;
-  margin: 0.5rem auto;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-flex {

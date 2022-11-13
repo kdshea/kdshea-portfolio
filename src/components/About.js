@@ -2,6 +2,10 @@ import { useState } from 'react'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 import Card from 'react-bootstrap/Card'
 import Book1 from '../assets/book1.jpg'
+import Book2 from '../assets/book2.jpg'
+import Podcast1 from '../assets/podcast1.jpg'
+import Podcast2 from '../assets/podcast2.jpg'
+import Music1 from '../assets/music1.jpg'
 import images from '../Images'
 
 
@@ -25,7 +29,7 @@ const About = () => {
         <div className="about-text">
           <h2>About</h2>
           <p>Welcome! My name is Kate Shea. I&#39;m a Boston-based developer transitioning from a career in hospitality. For the last 10 years, I have always been studying something new, earning degrees in biochemical engineering and nursing all while working as a manager in the hospitality industry.</p>
-          <p>Recently while pursuing my second nursing degree, I took a Bioinformatics course that sparked my interest in the intersection between technology and engineering in healthcare, and how to make products that can improve healthcare systems and provide value to patients. I decided to do a software engineering bootcamp and pursue software development. My background gives me a unique perspective: I have worked in client-facing roles in hospitality and nursing, but I also have the technical background of engineering and software development.</p>
+          <p>Recently while pursuing my second nursing degree, I took a Bioinformatics course. It sparked my interest in the intersection between technology and engineering in healthcare, and how to make products that can improve healthcare systems and provide value to patients. I decided to do a software engineering bootcamp and pursue software development. My background gives me a unique perspective: I have worked in client-facing roles in hospitality and nursing, but I also have the technical background of engineering and software development.</p>
           <p> I&#39;m looking for opportunities to use my skillset to contribute to larger projects and make a positive impact, while continuing to be challenged and grow as a developer.</p>
         </div>
         <div>
@@ -36,7 +40,7 @@ const About = () => {
           <div className="about-reading">
             <div className="about-title">
               <div>
-                <h3>Reading</h3>
+                <h3>Currently Reading</h3>
               </div>
               <div>
                 <a href="https://www.goodreads.com/kdshea" target="_blank" rel="noopener noreferrer">
@@ -45,13 +49,16 @@ const About = () => {
                 </a>
               </div>
             </div>
+            {/* <p>Updated Monthly</p> */}
             <div className="card-wrapper">
               <Card>
                 <Card.Header>To Learn</Card.Header>
-                <Card.Img variant="top" src={Book1} />
+                <div className="card-img-wrapper">
+                  <Card.Img variant="top" src={Book1} />
+                </div>
                 <Card.Body>
-                  <Card.Title>Everything I Never Told You</Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">Celeste Ng</Card.Subtitle>
+                  <Card.Title>Falling Awake</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Jon Kabat-Zinn</Card.Subtitle>
                   {/* <Card.Text>
                     Some quick example text to build on the card title and make up the
                     bulk of the card&#39;s content.
@@ -60,7 +67,9 @@ const About = () => {
               </Card>
               <Card>
                 <Card.Header>For Fun</Card.Header>
-                <Card.Img variant="top" src={Book1} />
+                <div className="card-img-wrapper">
+                  <Card.Img variant="top" src={Book2} />
+                </div>
                 <Card.Body>
                   <Card.Title>Everything I Never Told You</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">Celeste Ng</Card.Subtitle>
@@ -75,7 +84,7 @@ const About = () => {
           <div className="about-listening">
             <div className="about-title">
               <div>
-                <h3>Listening</h3>
+                <h3>Currently Listening</h3>
               </div>
               <div>
                 <a href="https://open.spotify.com/user/d8n5dvxeniup3btt90unrjuww" target="_blank" rel="noopener noreferrer">
@@ -84,13 +93,16 @@ const About = () => {
                 </a>
               </div>
             </div>
+            {/* <p>Updated Monthly</p> */}
             <div className="card-wrapper">
               <Card>
                 <Card.Header>To Learn</Card.Header>
-                <Card.Img variant="top" src={Book1} />
+                <div className="card-img-wrapper">
+                  <Card.Img variant="top" src={Podcast1} />
+                </div>
                 <Card.Body>
-                  <Card.Title>Everything I Never Told You</Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">Celeste Ng</Card.Subtitle>
+                  <Card.Title>Huberman Lab Podcast</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Episode 57: Optimizing Workspace For Productivity, Focus, & Creativity</Card.Subtitle>
                   {/* <Card.Text>
                     Some quick example text to build on the card title and make up the
                     bulk of the card&#39;s content.
@@ -99,10 +111,12 @@ const About = () => {
               </Card>
               <Card>
                 <Card.Header>For Fun</Card.Header>
-                <Card.Img variant="top" src={Book1} />
+                <div className="card-img-wrapper">
+                  <Card.Img variant="top" src={Podcast2} />
+                </div>
                 <Card.Body>
-                  <Card.Title>Everything I Never Told You</Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">Celeste Ng</Card.Subtitle>
+                  <Card.Title>Dark House</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted"> The Watcher House Part 1 (Westfield, NJ)</Card.Subtitle>
                   {/* <Card.Text>
                     Some quick example text to build on the card title and make up the
                     bulk of the card&#39;s content.
@@ -111,10 +125,12 @@ const About = () => {
               </Card>
               <Card>
                 <Card.Header>On Repeat</Card.Header>
-                <Card.Img variant="top" src={Book1} />
+                <div className="card-img-wrapper">
+                  <Card.Img variant="top" src={Music1} />
+                </div>
                 <Card.Body>
-                  <Card.Title>Everything I Never Told You</Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">Celeste Ng</Card.Subtitle>
+                  <Card.Title>Silver Lining</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Mt. Joy</Card.Subtitle>
                   {/* <Card.Text>
                     Some quick example text to build on the card title and make up the
                     bulk of the card&#39;s content.
@@ -126,7 +142,7 @@ const About = () => {
           <div className="about-travel">
             <div className="about-title">
               <div>
-                <h3>Travel</h3>
+                <h3>Interest: Travel</h3>
               </div>
               <div>
                 <a href="https://www.amcharts.com/visited_countries/#DK,FR,DE,IE,IT,NL,CH,GB,VA,BS,CA,CR,JM,MX,US,IN,ID,MY,LK,TH,AE,VN" target="_blank" rel="noopener noreferrer">
@@ -145,7 +161,7 @@ const About = () => {
           <div className="about-photography">
             <div className="about-title">
               <div>
-                <h3>Photography</h3>
+                <h3>Interest: Photography</h3>
               </div>
               <div>
                 <a href="https://flickr.com/photos/kdshea35/" target="_blank" rel="noopener noreferrer">
