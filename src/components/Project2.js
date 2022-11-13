@@ -36,49 +36,6 @@ const Project2 = () => {
                 <h3>Destinations Library</h3>
               </div>
               <div>
-              Axios
-Buffer
-Cloudinary
-CSS3
-HTML5
-JavaScript
-Node.js
-React Bootstrap
-React Router DOM
-React.js
-Sass
-AWS S3
-Bcrypt
-Buffer
-CORS
-Dotenv
-Express
-Insomnia
-JSON Web Token
-MongoDB
-Mongoose
-Node.js
-Heroku
-Netlify
-
-                <ul className="project-icons">
-                  <li className="cell">
-                    <i className="devicon-html5-plain"></i>
-                    <span>HTML 5</span>
-                  </li>
-                  <li className="cell">
-                    <i className="devicon-css3-plain"></i>
-                    <span>CSS3</span>
-                  </li>
-                  <li className="cell">
-                    <i className="devicon-sass-original"></i>
-                    <span>Sass</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="project-right">
-              <div>
                 <p>A MongoDB database with CRUD functionality created using Express and Mongoose served to a MERN stack app of travel destinations with user login, authorization, and image uploads.</p>
               </div>
               <div>
@@ -106,6 +63,60 @@ Netlify
                 </div>
               </div>
             </div>
+            <div className="project-right">
+              <div>
+                <h4>Built With</h4>
+              </div>
+              <div className="project-icons-wrapper">
+                <ul className="project-icons">
+                  <li className="cell">
+                    <i className="devicon-html5-plain"></i>
+                    <span>HTML 5</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-css3-plain"></i>
+                    <span>CSS3</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-sass-original"></i>
+                    <span>Sass</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-bootstrap-plain"></i>
+                    <span>Bootstrap</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-javascript-plain"></i>
+                    <span>JavaScript</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-react-original"></i>
+                    <span>React</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-amazonwebservices-original"></i>
+                    <span>AWS S3</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-express-original"></i>
+                    <span>Express</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-nodejs-plain"></i>
+                    <span>Node.js</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-mongodb-plain"></i>
+                    <span>MongoDB</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-heroku-original"></i>
+                    <span>Heroku</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

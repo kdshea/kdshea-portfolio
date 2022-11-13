@@ -36,36 +36,6 @@ const Project3 = () => {
                 <h3>Recipe App</h3>
               </div>
               <div>
-              Axios
-CSS3
-HTML5
-JavaScript
-React Bootstrap
-React Router DOM
-React.js
-Sass
-Netlify
-Excalidraw
-Insomnia
-YouTube
-                <ul className="project-icons">
-                  <li className="cell">
-                    <i className="devicon-html5-plain"></i>
-                    <span>HTML 5</span>
-                  </li>
-                  <li className="cell">
-                    <i className="devicon-css3-plain"></i>
-                    <span>CSS3</span>
-                  </li>
-                  <li className="cell">
-                    <i className="devicon-sass-original"></i>
-                    <span>Sass</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="project-right">
-              <div>
                 <p>A quick project with a React.js front-end consuming a RESTful API to display recipes.</p>
               </div>
               <div>
@@ -85,6 +55,40 @@ YouTube
                 </div>
               </div>
             </div>
+            <div className="project-right">
+              <div>
+                <h4>Built With</h4>
+              </div>
+              <div className="project-icons-wrapper">
+                <ul className="project-icons">
+                  <li className="cell">
+                    <i className="devicon-html5-plain"></i>
+                    <span>HTML 5</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-css3-plain"></i>
+                    <span>CSS3</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-sass-original"></i>
+                    <span>Sass</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-bootstrap-plain"></i>
+                    <span>Bootstrap</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-javascript-plain"></i>
+                    <span>JavaScript</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-react-original"></i>
+                    <span>React</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

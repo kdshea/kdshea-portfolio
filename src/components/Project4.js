@@ -33,32 +33,8 @@ const Project4 = () => {
           <div className="info-wrapper">
             <div className="project-left">
               <div>
-                <h3>Project 4 Name</h3>
+                <h3>Tetris Clone</h3>
               </div>
-              <div>
-              JavaScript
-CSS3
-HTML5
-GitHub Pages
-Chrome Developer Tools
-Excalidraw
-                <ul className="project-icons">
-                  <li className="cell">
-                    <i className="devicon-html5-plain"></i>
-                    <span>HTML 5</span>
-                  </li>
-                  <li className="cell">
-                    <i className="devicon-css3-plain"></i>
-                    <span>CSS3</span>
-                  </li>
-                  <li className="cell">
-                    <i className="devicon-sass-original"></i>
-                    <span>Sass</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="project-right">
               <div>
                 <p>A browser-based Tetris clone game using grid movement built using HTML, CSS, and JavaScript</p>
               </div>
@@ -77,6 +53,31 @@ Excalidraw
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="project-right">
+              <div>
+                <h4>Built With</h4>
+              </div>
+              <div className="project-icons-wrapper">
+                <ul className="project-icons">
+                  <li className="cell">
+                    <i className="devicon-javascript-plain"></i>
+                    <span>JavaScript</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-html5-plain"></i>
+                    <span>HTML 5</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-css3-plain"></i>
+                    <span>CSS3</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-github-original"></i>
+                    <span>GitHub Pages</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

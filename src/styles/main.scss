@@ -299,9 +299,17 @@ video {
     display: flex;
     flex-direction: column;
     
+    h3 {
+      margin-top: 1rem;
+    }
+
     p {
       margin-top: 1rem;
     }
+  }
+
+  .project-right {
+    margin-top: 1rem;
   }
 
   .project-icons {
@@ -318,6 +326,11 @@ video {
     }
   }
   
+  .project-icons-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
   .project-icons {
     li {
     justify-content: center;
@@ -327,9 +340,13 @@ video {
     width:75px;
     height: 75px;
     align-items: center;
+
     i {
-      font-size: 1rem;
+      font-size: 1.5rem;
       }
+    span {
+      font-size: 0.75rem;
+    }
     }
     li:hover {
       box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);

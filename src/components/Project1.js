@@ -43,26 +43,8 @@ const Project1 = () => {
           <div className="info-wrapper">
             <div className="project-left">
               <div>
-                <h3>Seeker</h3>
+                <h3>Job Seeker</h3>
               </div>
-              <div>
-                <ul className="project-icons">
-                  <li className="cell">
-                    <i className="devicon-html5-plain"></i>
-                    <span>HTML 5</span>
-                  </li>
-                  <li className="cell">
-                    <i className="devicon-css3-plain"></i>
-                    <span>CSS3</span>
-                  </li>
-                  <li className="cell">
-                    <i className="devicon-sass-original"></i>
-                    <span>Sass</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="project-right">
               <div>
                 <p>A full-stack job tracker app using a Python Django REST framework to serve a Postgres database to a React front-end that incorporates one-to-many and many-to-many data relationships, user login, authorization, and CRUD functionality.</p>
               </div>
@@ -81,6 +63,27 @@ const Project1 = () => {
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="project-right">
+              <div>
+                <h4>Built With</h4>
+              </div>
+              <div className="project-icons-wrapper">
+                <ul className="project-icons">
+                  <li className="cell">
+                    <i className="devicon-html5-plain"></i>
+                    <span>HTML 5</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-css3-plain"></i>
+                    <span>CSS3</span>
+                  </li>
+                  <li className="cell">
+                    <i className="devicon-sass-original"></i>
+                    <span>Sass</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
